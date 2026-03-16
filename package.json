@@ -9,9 +9,17 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@puckeditor/core": "^0.21.1",
+    "@react-email/components": "^1.0.9",
+    "@temporalio/activity": "^1.15.0",
+    "@temporalio/client": "^1.15.0",
+    "@temporalio/worker": "^1.15.0",
+    "@temporalio/workflow": "^1.15.0",
     "next": "16.1.6",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "react-email": "^5.2.9",
+    "resend": "^6.9.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

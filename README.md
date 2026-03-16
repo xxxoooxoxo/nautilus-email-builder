@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Email Builder with Drag & Drop
 
-## Getting Started
+**Nautilus Engineering · Full-Stack Engineer Take-Home**
 
-First, run the development server:
+## Overview
+
+A visual email builder that lets users compose, preview, and send emails using a drag-and-drop interface.
+
+## Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Next.js 15+ (App Router) | Application framework |
+| TypeScript (strict) | Type safety |
+| React Email | Email-safe components |
+| Resend | Email delivery |
+| Puck Editor | Drag & drop builder |
+| Temporal | Durable scheduling |
+
+## Setup
 
 ```bash
+# Install dependencies
+npm install
+
+# Copy env vars
+cp .env.example .env.local
+# Fill in your RESEND_API_KEY, etc.
+
+# Run dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Variable | Description |
+|---|---|
+| `RESEND_API_KEY` | API key from [resend.com](https://resend.com) |
+| `RESEND_FROM_EMAIL` | Sender email address (default: `onboarding@resend.dev`) |
+| `TEMPORAL_ADDRESS` | Temporal server address (default: `localhost:7233`) |
 
-## Learn More
+### Temporal (for scheduling)
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Install Temporal CLI: https://docs.temporal.io/cli
+temporal server start-dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Requirements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Tier 1 — Must Have
 
-## Deploy on Vercel
+- **Drag & Drop Email Builder** — Puck editor with React Email components (Button, Heading, Text, Image, Container, Section)
+- **Component Property Editing** — Sidebar editing for colors, typography, sizing, image URLs, content & links
+- **Live Email Preview** — Real-time preview updating as users edit
+- **Email Sending** — Send via Resend with recipient input, subject line, status notifications
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Tier 2 — Expected
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Email Scheduling** — Durable workflow via Temporal with date/time picker, scheduled email list, cancellation
+- **Desktop & Mobile Preview** — Toggle between preview widths
+
+### Tier 3 — Impress Us
+
+- Undo / redo
+- Starter template library (Welcome Email, Newsletter, Promo)
+- Image upload, dark mode, keyboard shortcuts
+
+## Architecture Decisions
+
+<!-- Document your decisions here as you build -->
+
+## Assumptions
+
+<!-- Document assumptions here -->
+
+## Time Spent
+
+<!-- Track your time here -->
+
+## Resources
+
+- [Next.js Docs](https://nextjs.org/docs)
+- [Puck Editor](https://puckeditor.com)
+- [React Email](https://react.email)
+- [Resend](https://resend.com)
+- [Temporal](https://temporal.io)
