@@ -2,6 +2,31 @@
 
 **Nautilus Engineering · Full-Stack Engineer Take-Home**
 
+## Getting Started
+
+### Option A: Fork (recommended)
+
+1. Click **Fork** on this repo to create your own copy
+2. Clone your fork locally:
+   ```bash
+   git clone https://github.com/<your-username>/nautilus-email-builder.git
+   cd nautilus-email-builder
+   ```
+
+### Option B: Clone directly
+
+```bash
+git clone https://github.com/xxxoooxoxo/nautilus-email-builder.git
+cd nautilus-email-builder
+```
+
+> **⚠️ Important:** Do **not** push to this repository. Work on your own fork or a local copy only. If you cloned directly, remove the remote before starting:
+> ```bash
+> git remote remove origin
+> ```
+
+---
+
 ## Overview
 
 A visual email builder that lets users compose, preview, and send emails using a drag-and-drop interface.
