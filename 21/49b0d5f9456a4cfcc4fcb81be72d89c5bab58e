@@ -1,0 +1,23 @@
+.env.example
+  s_4109f8c682fb9c::t_533a01bef14f08 1-8
+.gitignore
+  s_4109f8c682fb9c::t_71abc0ac58af93 35
+README.md
+  s_4109f8c682fb9c::t_7392baeee6ef6a 1,30,32-36,40-41,51,55,58-62,64,67-68,71-72,75,77-81,83,85,87,89-93,95,97,99,101,103-109,111-114,123-124
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "2149b0d5f9456a4cfcc4fcb81be72d89c5bab58e",
+  "prompts": {},
+  "sessions": {
+    "s_4109f8c682fb9c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2117dc1a-64ea-4a48-8fe3-bb5e5145e41f",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Ali Houssain Sareini <alihsareini@live.com>"
+    }
+  }
+}
