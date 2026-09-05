@@ -77,10 +77,11 @@ temporal server start-dev
 
 ### Tier 1 — Must Have
 
-- **Drag & Drop Email Builder** — Puck editor with React Email components (Button, Heading, Text, Image, Container, Section)
+- **Drag & Drop Email Builder** — Puck editor with React Email components (Button, Heading, Text, Image, Container, Section, etc...)
 - **Component Property Editing** — Sidebar editing for colors, typography, sizing, image URLs, content & links
 - **Live Email Preview** — Real-time preview updating as users edit
 - **Email Sending** — Send via Resend with recipient input, subject line, status notifications
+- **WYSIWYG** - Parity on editor with sent item
 
 ### Tier 2 — Expected
 
@@ -89,9 +90,7 @@ temporal server start-dev
 
 ### Tier 3 — Impress Us
 
-- Undo / redo
-- Starter template library (Welcome Email, Newsletter, Promo)
-- Image upload, dark mode, keyboard shortcuts
+- 3-5 more quality of life improvements
 
 ## Architecture Decisions
 
